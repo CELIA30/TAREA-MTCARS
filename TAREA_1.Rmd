@@ -36,3 +36,11 @@ autos_seleccion <- autos_ordenados |>
   select(mpg, hp, wt)
 ```
 
+
+```{r}
+promedio <- autos_seleccion |> 
+  summarize(promedio_MPG = mean(mpg),
+            promedio_HP = mean(hp),
+            promedio_WT = mean(wt))
+```
+
