@@ -26,4 +26,8 @@ Autos_con_filtros <- mtcars |>
   filter(hp > 100)
 ```
 
+```{r}
+autos_ordenados <- Autos_con_filtros |> 
+  arrange(desc(hp))
+```
 
