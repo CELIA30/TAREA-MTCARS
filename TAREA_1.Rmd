@@ -31,3 +31,8 @@ autos_ordenados <- Autos_con_filtros |>
   arrange(desc(hp))
 ```
 
+```{r}
+autos_seleccion <- autos_ordenados |> 
+  select(mpg, hp, wt)
+```
+
