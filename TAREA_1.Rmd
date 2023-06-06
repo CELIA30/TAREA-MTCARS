@@ -1,0 +1,29 @@
+---
+title: "TAREA MTCARS"
+author: "CELIA MATARRITA ORTIZ"
+date: "2023-06-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(datos)
+library(dplyr)
+library(datasets)
+```
+
+
+```{r}
+autos <- datasets::mtcars
+```
+
+
+```{r}
+Autos_con_filtros <- mtcars |> 
+  filter(hp > 100)
+```
+
+
